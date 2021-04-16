@@ -1,0 +1,26 @@
+{
+	"apps": [{
+		"name": "app-name",
+		"cwd": "/home/user/web/domain/nodeapp",
+		"script": "./bin/www",
+		"node_args": "--expose-gc",
+		"watch": "./",
+		"ignore_watch": [
+			"./app.sock",
+			"./public",
+			"./files",
+			"./tmp",
+			"./.git"
+		 ],
+		"log_date_format": "YYYY-MM-DD HH:mm Z",
+		"exec_mode": "cluster",
+		"instances": "1",
+		"max_memory_restart": "100M",
+		"out_file": "/dev/null",
+		"log_file": "/dev/null",
+		"error_file": "/dev/null",
+		"env": {
+			"PORT": "3000"
+		}
+	}]
+}
